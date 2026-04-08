@@ -1,0 +1,24 @@
+{
+  "overview": "Jodex Production is a premium portfolio website for a creative studio specializing in 3D Animation, 2D Animation, Video Editing, and Interior Designing. Features a dark glassmorphism aesthetic with animated 3D hero panels, certificate showcase, YouTube client work gallery, and a password-protected admin dashboard for managing all media content.",
+  "features": [
+    "Moving 3D hero panel animation with 6 upload slots for portfolio clips/images",
+    "Admin direct file upload for hero panels (no URL input)",
+    "Certificate section after hero with direct image upload from admin",
+    "YouTube client work section with 3D hover cards",
+    "Client reviews/testimonials in footer",
+    "Password-protected admin dashboard",
+    "Dark glassmorphism design with neon cyan accents",
+    "Hire Me modal with Gmail, Instagram, Discord contacts"
+  ],
+  "category": "portfolio",
+  "tags": [
+    "portfolio",
+    "animation",
+    "creative",
+    "glassmorphism",
+    "3d",
+    "video-editing",
+    "admin-dashboard"
+  ],
+  "last_updated": "2026-04-08T21:35:17.947Z"
+}

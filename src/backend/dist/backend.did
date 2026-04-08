@@ -1,0 +1,36 @@
+type YouTubeVideo = 
+ record {
+   addedAt: int;
+   id: nat;
+   title: text;
+   url: text;
+ };
+type LoginResult = 
+ variant {
+   err: text;
+   ok: text;
+ };
+type Certificate = 
+ record {
+   id: nat;
+   url: text;
+ };
+type AddVideoResult = 
+ variant {
+   err: text;
+   ok: YouTubeVideo;
+ };
+service : {
+  addCertificate: (token: text, url: text) -> (nat);
+  addYouTubeVideo: (url: text, title: text) -> (AddVideoResult);
+  adminLogin: (username: text, password: text) -> (LoginResult);
+  adminLogout: (token: text) -> ();
+  clearHeroPanelMedia: (token: text, slotIndex: nat) -> ();
+  getCertificates: () -> (vec Certificate) query;
+  getHeroPanelMedia: () -> (vec text) query;
+  getYouTubeVideos: () -> (vec YouTubeVideo) query;
+  removeCertificate: (token: text, id: nat) -> ();
+  removeYouTubeVideo: (id: nat) -> ();
+  setHeroPanelMedia: (token: text, slotIndex: nat, url: text) -> ();
+  verifyAdminSession: (token: text) -> (bool) query;
+}
